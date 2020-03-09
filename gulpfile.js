@@ -48,7 +48,9 @@ gulp.task('inline-resources', function () {
  * 4. Run the Angular compiler, ngc, on the /.tmp folder. This will output all
  *    compiled modules to the /build folder.
  */
+var ngFsUtils = require('@angular/compiler-cli/src/ngtsc/file_system');
 gulp.task('ngc', function () {
+  ngFsUtils.setFileSystem(new ngFsUtils.NodeJSFileSystem());
   ngc([ '--project', `${tmpFolder}/tsconfig.es5.json` ]);
   return Promise.resolve()
 });

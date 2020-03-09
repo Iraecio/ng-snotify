@@ -10,35 +10,23 @@
       <label for="body">Body</label>
       <textarea [(ngModel)]="body" id="body" rows="2" class="form-control"></textarea>
     </div>
-    <div class="row">
-      <div class="col-xs-6">
-        <div class="form-group">
-          <label for="titlemaxlen">Title max-length</label>
-          <input [(ngModel)]="titleMaxLength" type="text" id="titlemaxlen" class="form-control">
-        </div>
-      </div>
-      <div class="col-xs-6">
-        <div class="form-group">
-          <label for="bodymaxlen">Body max-length</label>
-          <input [(ngModel)]="bodyMaxLength" type="text" id="bodymaxlen" class="form-control">
-        </div>
-      </div>
+    <div class="form-group">
+      <label for="titlemaxlen">Title max-length</label>
+      <input [(ngModel)]="titleMaxLength" type="text" id="titlemaxlen" class="form-control">
     </div>
-    <div class="row">
-      <div class="col-xs-6">
-        <div class="form-group">
-          <label for="timeout">Timeout</label>
-          <input [(ngModel)]="timeout" type="number" id="timeout" class="form-control">
-        </div>
-      </div>
-      <div class="col-xs-6">
-        <div class="form-group">
-          <label for="backdrop">
-            Backdrop (0.0 - 1.0)
-          </label>
-          <input [(ngModel)]="backdrop" type="number" id="backdrop" class="form-control" min="-1" max="1">
-        </div>
-      </div>
+    <div class="form-group">
+      <label for="bodymaxlen">Body max-length</label>
+      <input [(ngModel)]="bodyMaxLength" type="text" id="bodymaxlen" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="timeout">Timeout</label>
+      <input [(ngModel)]="timeout" type="number" id="timeout" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="backdrop">
+        Backdrop (0.0 - 1.0)
+      </label>
+      <input [(ngModel)]="backdrop" type="number" id="backdrop" class="form-control" min="-1" max="1">
     </div>
 
     <div class="form-group">
@@ -97,23 +85,17 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-xs-6">
-        <div class="form-group">
-          <label for="dockMax">
-            Max on screen
-          </label>
-          <input [(ngModel)]="dockMax" type="number" id="dockMax" class="form-control" min="1">
-        </div>
-      </div>
-      <div class="col-xs-6">
-        <div class="form-group">
-          <label for="blockMax">
-            Max at position
-          </label>
-          <input [(ngModel)]="blockMax" type="number" id="blockMax" class="form-control" min="1">
-        </div>
-      </div>
+    <div class="form-group">
+      <label for="dockMax">
+        Max on screen
+      </label>
+      <input [(ngModel)]="dockMax" type="number" id="dockMax" class="form-control" min="1">
+    </div>
+    <div class="form-group">
+      <label for="blockMax">
+        Max at position
+      </label>
+      <input [(ngModel)]="blockMax" type="number" id="blockMax" class="form-control" min="1">
     </div>
 
     <div class="form-group">
@@ -152,13 +134,12 @@
 
     <div class="btn btn-block btn-primary" (click)="onClear()">Clear all</div>
 
-
   </aside>
   <div class="content">
     <main>
       <div class="brand">
-        <h1>Ng-Snotify</h1>
-        <p>Angular 2+ Notification Center</p>
+        <h1>Ngx-Notify</h1>
+        <p>Angular 9+ Notification Center</p>
       </div>
     </main>
     <footer>
@@ -167,7 +148,7 @@
         <a href="compodoc/index.html" target="_blank">Compodoc</a> &#9673;
         <a href="https://github.com/artemsky/ng-snotify" target="_blank">GitHub</a> &#9673;
         <a href="https://www.npmjs.com/package/ng-snotify" target="_blank">NPM</a>
-        <h6>MIT &copy; 2018 <a href="https://github.com/artemsky/">artemsky</a></h6>
+        <h6>MIT &copy; 2020 <a href="https://github.com/iraecio/">Iraecio</a></h6>
       </div>
     </footer>
     <ng-snotify class="{{style}}"></ng-snotify>
